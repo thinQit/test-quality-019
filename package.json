@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
@@ -44,7 +44,8 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@playwright/test": "^1.49.0",
     "eslint": "^8.57.0",
-    "eslint-config-next": "14.2.35"
+    "eslint-config-next": "14.2.35",
+    "@typescript-eslint/eslint-plugin": "^6.0.0"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
